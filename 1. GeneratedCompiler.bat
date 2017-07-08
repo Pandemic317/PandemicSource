@@ -1,0 +1,5 @@
+@echo off
+TITLE BeastPS Compiler
+"C:\Program Files\Java\jdk1.8.0_91\bin\javac.exe" -classpath deps/commons-io-2.4.jar;deps/Motivote-server.jar;deps/gson-2.2.4.jar;deps/GTLVote.jar;deps/json-simple-1.1.1.jar;deps/jython.jar;deps/log4j-1.2.15.jar;deps/mina.jar;deps/mysql.jar;deps/poi.jar;deps/slf4j-nop.jar;deps/slf4j.jar;deps/voteHandler.jar;deps/xstream.jar; -d bin src\server\*.java src\server\clip\*.java src\server\clip\region\*.java src\server\model\items\*.java src\server\model\minigames\*.java src\server\model\npcs\*.java src\server\model\objects\*.java src\server\model\players\*.java src\server\model\players\Content\*.java src\server\model\players\Content\AuctionHouse\*.java src\server\model\players\Content\Gambler\*.java src\server\model\players\packets\*.java src\server\model\players\skills\*.java src\server\model\shops\*.java src\server\net\*.java src\server\task\*.java src\server\util\*.java src\server\util\log\*.java src\server\world\*.java src\server\world\map\*.java 
+TITLE Finished compiling!
+pause

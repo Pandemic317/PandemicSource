@@ -1,0 +1,56 @@
+package server.model.minigames;
+
+import server.Server;
+import server.model.players.Client;
+import server.model.players.PlayerHandler;
+
+/**
+ * @author No1killme Xd
+ */
+
+public class GhostBuster {
+	
+	public static int GhostCount = 0;
+	public static int MoneyId = 5021;// the 1 billion ticket id
+	public static int MoneyToEnter = 300;// the amount of 1 billion ticket to enter and to delete it
+	public static int GhostId = 103;//The npc that spawns id
+
+	public static int[][] npcCoords = {//these are the npc coords
+			{3091, 4439},//1
+			{3093, 9673},//2
+			{3097, 9671},//3
+			{3102, 9674},//4
+			{3105, 9671},//5
+			{3109, 9674},//6
+			{3114, 9671},//7
+			{3120, 9672},//8
+			{3123, 9669},//9
+			{3123, 9663},//10
+			{3123, 9658},//11
+			{3122, 9652},//12
+			{3123, 9647},//13
+	
+	public static void SpawnNpcs(Client c) {
+		if (MoneyId < 300) {
+			c.sendMessage("<col=255>You need at least 300 1b tickets to get access to this feature!");
+			return;
+		}
+		if (TzhaarCount > 0) {
+			c.sendMessage("<col=255>The ghosts are already spawned!");
+			return;
+		}
+		if (c.getItems().playerHasItem(5021, 300)) {
+			for (int j = 0; j < PlayerHandler.players.length; j++) {
+    			if (PlayerHandler.players[j] != null) {
+    				Client c2 = (Client)PlayerHandler.players[j];
+    				c.sendMessage("<col=255>You have just released the ghosts! Make sure to kill all Ghosts first!");
+			}
+			}
+			TzhaarCount = 15;
+			for (int i = 0; i < npcCoords.length; i++) {
+				Server.npcHandler.spawnNpc2(GhostId, npcCoords[i][0], npcCoords[i][1], 0, 1, 6900, 1200, 90, 99);
+			}
+		}
+	}
+	
+}

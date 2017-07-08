@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Data"/>
+	<classpathentry kind="src" path="deps"/>
+	<classpathentry kind="lib" path="deps/GTLVote.jar"/>
+	<classpathentry kind="lib" path="deps/jython.jar"/>
+	<classpathentry kind="lib" path="deps/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="deps/mina.jar"/>
+	<classpathentry kind="lib" path="deps/mysql.jar"/>
+	<classpathentry kind="lib" path="deps/poi.jar"/>
+	<classpathentry kind="lib" path="deps/slf4j-nop.jar"/>
+	<classpathentry kind="lib" path="deps/slf4j.jar"/>
+	<classpathentry kind="lib" path="deps/xstream.jar"/>
+	<classpathentry kind="lib" path="deps/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="deps/voteHandler.jar"/>
+	<classpathentry kind="lib" path="deps/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="deps/mvgate2.jar"/>
+	<classpathentry kind="lib" path="deps/mvgate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Desktop/megascape/Pandemic Source/deps/Motivote-server.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
